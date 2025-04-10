@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="60" viewBox="0 0 200 60" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&amp;display=swap');
+    .text-main { 
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      fill: #2d3436;
+    }
+    .text-shadow {
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      fill: #636e72;
+      filter: blur(2px);
+    }
+  </style>
+  <text x="102" y="35" class="text-shadow" text-anchor="middle">Kanak's Cafe</text>
+  <text x="100" y="33" class="text-main" text-anchor="middle">Kanak's Cafe</text>
+</svg> 

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../images/logo.png";
+import logo from "../images/logo.svg";
 import { HiOutlineUserCircle } from "react-icons/hi";
 import { BsCartFill } from "react-icons/bs";
 import { useDispatch, useSelector } from "react-redux";
@@ -29,8 +29,8 @@ const Header = () => {
       <div className='container mx-auto px-4 py-2'>
         <div className='flex items-center justify-between h-16'>
           <Link to='/'>
-            <div className='h-12'>
-              <img src={logo} alt='Logo' className='h-full' />
+            <div className='h-16 flex items-center'>
+              <img src={logo} alt="Kanak's Cafe" className='h-12' />
             </div>
           </Link>
 
@@ -43,7 +43,7 @@ const Header = () => {
                 Home
               </Link>
               <Link
-                to='/menu/63f0fdbb3bcc2f97fa53d25d'
+                to='/menu'
                 className='text-gray-800 hover:text-blue-500 transition-colors duration-300'
               >
                 Menu
@@ -131,7 +131,7 @@ const Header = () => {
                       Home
                     </Link>
                     <Link
-                      to='/menu/63f0fdbb3bcc2f97fa53d25d'
+                      to='/menu'
                       className='px-2 py-1 text-gray-800 hover:text-blue-500 transition-colors duration-300'
                     >
                       Menu

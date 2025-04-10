@@ -4,6 +4,7 @@ import { GrPrevious, GrNext } from "react-icons/gr";
 import CardFeature from "../component/CardFeature";
 import AllProduct from "../component/AllProduct";
 import delivery from "../images/delivery.png";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const productData = useSelector((state) => state.product.productList);
@@ -47,9 +48,11 @@ const Home = () => {
             providing exceptional service. Discover the flavors of Sri Lanka
             today at Nugasewana.
           </p>
-          <button className='font-bold bg-red-500 text-slate-200 px-4 py-2 rounded-md'>
-            Order Now
-          </button>
+          <Link to="/menu">
+            <button className='font-bold bg-red-500 text-slate-200 px-4 py-2 rounded-md hover:bg-red-600 transition duration-300'>
+              Order Now
+            </button>
+          </Link>
         </div>
 
         <div className='md:w-1/2 flex flex-wrap gap-5 p-4 justify-center'>
